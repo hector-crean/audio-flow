@@ -1,8 +1,8 @@
-import React from "react";
-import { NodeProps } from "react-flow-renderer";
 import Node from "components/Node";
 import Slider, { SliderType } from "components/controls/Slider";
 import useGainNode from "hooks/nodes/useGainNode";
+import React from "react";
+import { NodeProps } from "reactflow";
 import { float32toDb } from "utils/units";
 
 function Gain({ data, id, selected, type: nodeType }: NodeProps) {

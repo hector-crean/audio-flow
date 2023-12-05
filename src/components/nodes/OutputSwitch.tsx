@@ -1,9 +1,9 @@
-import React, { useCallback, useEffect } from "react";
-import { NodeProps } from "react-flow-renderer";
-import { useNode } from "context/NodeContext";
 import Node from "components/Node";
 import Toggle from "components/controls/Toggle";
+import { useNode } from "context/NodeContext";
 import useGainNode from "hooks/nodes/useGainNode";
+import React, { useCallback, useEffect } from "react";
+import { NodeProps } from "reactflow";
 
 function OutputSwitch({ data, id, selected, type: nodeType }: NodeProps) {
   const { onChange, output = "A" } = data;

@@ -1,8 +1,8 @@
-import React, { useCallback, useEffect, useRef } from "react";
-import { NodeProps } from "react-flow-renderer";
-import { useNode } from "context/NodeContext";
 import Node from "components/Node";
+import { useNode } from "context/NodeContext";
 import useConstantSourceNode from "hooks/nodes/useConstantSourceNode";
+import React, { useCallback, useEffect, useRef } from "react";
+import { NodeProps } from "reactflow";
 
 function drawAxes(context: CanvasRenderingContext2D) {
   const height = context.canvas.height;

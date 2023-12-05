@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { NodeProps } from "react-flow-renderer";
 import { useThrottleFn } from "ahooks";
 import Node from "components/Node";
 import useAudioWorkletNode from "hooks/nodes/useAudioWorkletNode";
+import React, { useEffect, useState } from "react";
+import { NodeProps } from "reactflow";
 
 const BUFFER_SIZES = Array(5)
   .fill(null)

@@ -1,8 +1,8 @@
-import React from "react";
-import { NodeProps } from "react-flow-renderer";
-import Visualiser from "./Visualiser";
 import Node from "components/Node";
 import useAnalyserNode from "hooks/nodes/useAnalyserNode";
+import React from "react";
+import { NodeProps } from "reactflow";
+import Visualiser from "./Visualiser";
 
 export enum DataType {
   Frequency = "Frequency",

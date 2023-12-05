@@ -1,9 +1,9 @@
-import React, { useCallback, useEffect } from "react";
-import { NodeProps } from "react-flow-renderer";
-import { useNode } from "context/NodeContext";
 import Node from "components/Node";
-import { NoteSymbol, NoteValue } from "utils/notes";
+import { useNode } from "context/NodeContext";
 import "fonts/bravura/bravura.css";
+import React, { useCallback, useEffect } from "react";
+import { NodeProps } from "reactflow";
+import { NoteSymbol, NoteValue } from "utils/notes";
 
 const noteStyle: React.CSSProperties = {
   fontFamily: "Bravura",

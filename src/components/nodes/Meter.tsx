@@ -1,8 +1,8 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
-import { NodeProps } from "react-flow-renderer";
 import Node from "components/Node";
-import useAnimationFrame from "hooks/useAnimationFrame";
 import useAudioWorkletNode from "hooks/nodes/useAudioWorkletNode";
+import useAnimationFrame from "hooks/useAnimationFrame";
+import React, { useCallback, useEffect, useRef, useState } from "react";
+import { NodeProps } from "reactflow";
 import { logarithmic } from "utils/scale";
 import { float32toDb } from "utils/units";
 

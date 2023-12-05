@@ -1,7 +1,7 @@
-import React from "react";
-import { NodeProps } from "react-flow-renderer";
 import Node from "components/Node";
 import useAudioWorkletNode from "hooks/nodes/useAudioWorkletNode";
+import React from "react";
+import { NodeProps } from "reactflow";
 
 function Comparator({ id, type }: NodeProps) {
   useAudioWorkletNode(id, "comparator-processor", { numberOfInputs: 2 });

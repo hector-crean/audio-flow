@@ -1,7 +1,7 @@
-import React from "react";
-import { NodeProps } from "react-flow-renderer";
 import Node from "components/Node";
 import useChannelMergerNode from "hooks/nodes/useChannelMergerNode";
+import React from "react";
+import { NodeProps } from "reactflow";
 import { channelCounts } from "utils/channels";
 
 function ChannelMerger({ data, id, selected, type }: NodeProps) {

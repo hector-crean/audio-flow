@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
-import { NodeProps } from "react-flow-renderer";
-import { useNode } from "context/NodeContext";
 import Node from "components/Node";
+import { useNode } from "context/NodeContext";
 import useGainNode from "hooks/nodes/useGainNode";
+import React, { useEffect } from "react";
+import { NodeProps } from "reactflow";
 
 // TODO mix as param
 function DelayEffect({ data, id, selected, type }: NodeProps) {

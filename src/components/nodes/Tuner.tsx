@@ -1,12 +1,12 @@
-import React, { useEffect, useMemo, useState } from "react";
-import { NodeProps } from "react-flow-renderer";
 import { useThrottleFn } from "ahooks";
 import Node from "components/Node";
-import useAudioWorkletNode from "hooks/nodes/useAudioWorkletNode";
-import { PitchMethod } from "worklets/pitch-detector-processor.types";
-import { findClosestNote, getNoteFrequency, getNoteName } from "utils/notes";
 import Note from "components/Note";
 import RadialGauge from "components/RadialGauge";
+import useAudioWorkletNode from "hooks/nodes/useAudioWorkletNode";
+import React, { useEffect, useMemo, useState } from "react";
+import { NodeProps } from "reactflow";
+import { findClosestNote, getNoteFrequency, getNoteName } from "utils/notes";
+import { PitchMethod } from "worklets/pitch-detector-processor.types";
 
 // https://en.wikipedia.org/wiki/Just-noticeable_difference#Music_production_applications
 const NEAR_PERFECT_CENTS = 5;

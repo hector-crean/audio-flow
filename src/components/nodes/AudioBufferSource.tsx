@@ -1,12 +1,14 @@
 import Node from "components/Node";
 import { useNode } from "context/NodeContext";
 import React, { useCallback, useRef } from "react";
-import { NodeProps } from "react-flow-renderer";
+import { NodeProps } from "reactflow";
+import { IAudioBufferSourceOptions } from 'standardized-audio-context';
 import { AudioBufferSourceNode } from "utils/audioContext";
 
 
-function AudioBufferSource({ data, id, selected, type }: NodeProps) {
-  const { loop = true, onChange } = data;
+
+function AudioBufferSource({ data, id, selected, type }: NodeProps<IAudioBufferSourceOptions>) {
+  const { loop = true } = data;
   const activeBufferSource = useRef<AudioBufferSourceNode>();
 
   // TODO buffer source -> gain and swap buffer

@@ -1,8 +1,8 @@
-import React from "react";
-import { NodeProps } from "react-flow-renderer";
-import { useNode } from "context/NodeContext";
 import Node from "components/Node";
+import { useNode } from "context/NodeContext";
 import useAudioWorkletNode from "hooks/nodes/useAudioWorkletNode";
+import React from "react";
+import { NodeProps } from "reactflow";
 import { Parameters } from "worklets/sample-and-hold-processor.types";
 
 function SampleAndHold({ id, type }: NodeProps) {

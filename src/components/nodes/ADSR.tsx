@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
-import { NodeProps } from "react-flow-renderer";
-import { ComplexAudioNode, useNode } from "context/NodeContext";
 import Node from "components/Node";
+import { ComplexAudioNode, useNode } from "context/NodeContext";
 import useAudioWorkletNode from "hooks/nodes/useAudioWorkletNode";
+import React, { useEffect } from "react";
+import { NodeProps } from "reactflow";
 import { AudioContext, AudioWorkletNode } from "utils/audioContext";
 import { Mode, Parameters } from "worklets/adsr-processor.types";
 

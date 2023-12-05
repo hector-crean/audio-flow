@@ -1,6 +1,6 @@
 import Node from "components/Node";
 import React from "react";
-import { NodeProps } from "react-flow-renderer";
+import { NodeProps } from "reactflow";
 // import impulseResponses from "./impulseResponses";
 
 // const defaultImpulseResponse = impulseResponses[Object.keys(impulseResponses)[0]];

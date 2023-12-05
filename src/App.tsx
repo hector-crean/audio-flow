@@ -6,7 +6,7 @@ import Project, { ProjectState, getEmptyProject } from "components/Project";
 import { ProjectContext } from "context/ProjectContext";
 import { produce } from "immer";
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { ReactFlowProvider, useEdgesState, useNodesState } from "react-flow-renderer";
+import { ReactFlowProvider, useEdgesState, useNodesState } from "reactflow";
 
 import graph from 'data/simple.json';
 

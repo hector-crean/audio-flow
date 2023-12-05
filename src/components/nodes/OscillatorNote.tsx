@@ -1,9 +1,9 @@
-import React from "react";
-import { NodeProps } from "react-flow-renderer";
-import Note from "components/Note";
-import { OCTAVES, TWELFTHS, getNoteFrequency, getNoteName } from "utils/notes";
 import Node from "components/Node";
+import Note from "components/Note";
 import useOscillatorNode from "hooks/nodes/useOscillatorNode";
+import React from "react";
+import { NodeProps } from "reactflow";
+import { OCTAVES, TWELFTHS, getNoteFrequency, getNoteName } from "utils/notes";
 
 function OscillatorNote({ data, id, selected, type: nodeType }: NodeProps) {
   const { detune = 0, octave = 4, onChange, twelfth = 0, type = "sine" } = data;

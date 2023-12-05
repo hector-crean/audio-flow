@@ -1,7 +1,7 @@
-import React, { Dispatch, SetStateAction, useCallback, useEffect, useMemo, useState } from "react";
-import { Edge, EdgeChange, Node, NodeChange, Viewport } from "react-flow-renderer";
-import { v4 as uuidv4 } from "uuid";
 import { useProject } from "context/ProjectContext";
+import React, { Dispatch, SetStateAction, useCallback, useEffect, useMemo, useState } from "react";
+import { Edge, EdgeChange, Node, NodeChange, Viewport } from "reactflow";
+import { v4 as uuidv4 } from "uuid";
 
 export interface ProjectState {
   edges: Edge[];

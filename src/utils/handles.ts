@@ -1,7 +1,7 @@
-import { useCallback } from "react";
-import { Connection, Edge } from "react-flow-renderer";
-import { AnyAudioNode, isComplexAudioNode, useNodeContext } from "context/NodeContext";
 import { nodeCleanup } from "components/Nodes";
+import { AnyAudioNode, isComplexAudioNode, useNodeContext } from "context/NodeContext";
+import { useCallback } from "react";
+import { Connection, Edge } from "reactflow";
 
 function getChannelIndex(handle: string): number {
   return +(handle.match(/-(\d+)$/)?.[1] ?? 0);

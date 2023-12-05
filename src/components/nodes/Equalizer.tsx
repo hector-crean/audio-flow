@@ -4,7 +4,7 @@ import useBiquadFilterNode from "hooks/nodes/useBiquadFilterNode";
 import useGainNode from "hooks/nodes/useGainNode";
 import { produce } from "immer";
 import React, { useEffect } from "react";
-import { NodeProps } from "react-flow-renderer";
+import { NodeProps } from "reactflow";
 import { AudioNode } from "utils/audioContext";
 
 // const BANDS_WINAMP = [60, 170, 310, 600, 1000, 3000, 6000, 12000, 14000, 16000];

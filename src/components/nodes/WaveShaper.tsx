@@ -1,8 +1,8 @@
-import React, { useCallback, useContext, useMemo, useState } from "react";
-import { NodeProps } from "react-flow-renderer";
-import { AudioContextContext } from "context/AudioContextContext";
 import Node from "components/Node";
+import { AudioContextContext } from "context/AudioContextContext";
 import useWaveShaperNode from "hooks/nodes/useWaveShaperNode";
+import React, { useCallback, useContext, useMemo, useState } from "react";
+import { NodeProps } from "reactflow";
 
 // See: https://developer.mozilla.org/en-US/docs/Web/API/WaveShaperNode#Example
 const distortion = `const k = 50;

@@ -57,7 +57,7 @@ import ReactFlow, {
   addEdge,
   applyEdgeChanges,
   useReactFlow,
-} from "react-flow-renderer";
+} from "reactflow";
 import { useOnConnect, useOnEdgeRemove, useOnNodeRemove } from "utils/handles";
 import { v4 as uuidv4 } from "uuid";
 

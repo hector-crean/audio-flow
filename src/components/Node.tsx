@@ -1,9 +1,9 @@
-import React, { useCallback, useMemo } from "react";
-import { Handle, NodeProps, Position } from "react-flow-renderer";
-import { v4 as uuidv4 } from "uuid";
 import { GRID_SIZE } from "components/Flow";
 import { useContextMenu } from "context/ContextMenuContext";
 import { useProject } from "context/ProjectContext";
+import React, { useCallback, useMemo } from "react";
+import { Handle, NodeProps, Position } from "reactflow";
+import { v4 as uuidv4 } from "uuid";
 
 interface Props extends Omit<React.HTMLProps<HTMLDivElement>, "id" | "title"> {
   children?: React.ReactNode;

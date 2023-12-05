@@ -1,7 +1,7 @@
-import React from "react";
-import { NodeProps } from "react-flow-renderer";
 import Node from "components/Node";
 import useConstantSourceNode from "hooks/nodes/useConstantSourceNode";
+import React from "react";
+import { NodeProps } from "reactflow";
 
 function ConstantSource({ data, id, selected, type }: NodeProps) {
   const { offset = 1, onChange } = data;

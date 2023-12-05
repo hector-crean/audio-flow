@@ -1,8 +1,8 @@
+import { AudioContextContext } from "context/AudioContextContext";
 import { createContext, DependencyList, useContext, useEffect, useMemo } from "react";
-import { useStore } from "react-flow-renderer";
+import { useStore } from "reactflow";
 import { AudioContext, AudioNode } from "utils/audioContext";
 import { connectNodes, disconnectNodes } from "utils/handles";
-import { AudioContextContext } from "context/AudioContextContext";
 
 export type ComplexAudioNode<Input extends AudioNode | undefined, Output extends AudioNode | undefined> = {
   input?: Input;

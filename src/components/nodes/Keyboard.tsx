@@ -1,9 +1,9 @@
-import React, { useCallback } from "react";
-import { NodeProps } from "react-flow-renderer";
-import { useNode } from "context/NodeContext";
 import Node from "components/Node";
 import Note from "components/Note";
+import { useNode } from "context/NodeContext";
 import useConstantSourceNode from "hooks/nodes/useConstantSourceNode";
+import React, { useCallback } from "react";
+import { NodeProps } from "reactflow";
 import { TWELFTHS, getNoteFrequency } from "utils/notes";
 import "./Keyboard.css";
 

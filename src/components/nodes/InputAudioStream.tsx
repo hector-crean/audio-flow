@@ -1,9 +1,9 @@
-import React, { useCallback, useEffect, useState } from "react";
-import { NodeProps } from "react-flow-renderer";
 import Node from "components/Node";
 import { useNode } from "context/NodeContext";
 import useMediaDevices from "hooks/useMediaDevices";
-import { getDeviceAudioStream, MediaStreamWithDeviceId } from "utils/mediaDevices";
+import React, { useCallback, useEffect, useState } from "react";
+import { NodeProps } from "reactflow";
+import { MediaStreamWithDeviceId, getDeviceAudioStream } from "utils/mediaDevices";
 
 function InputAudioStream({ id, type, selected }: NodeProps) {
   const inputDevices = useMediaDevices("audioinput");
