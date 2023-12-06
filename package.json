@@ -11,6 +11,9 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
+    "@radix-ui/colors": "^3.0.0",
+    "@radix-ui/react-progress": "^1.0.3",
+    "@radix-ui/react-slider": "^1.1.2",
     "ahooks": "^3.7.8",
     "aubiojs": "^0.2.1",
     "canvas-gauges": "^2.1.7",

@@ -181,7 +181,7 @@ function Flow() {
   const onMoveEnd = useCallback((event: any, transform: Viewport) => void setTransform(transform), [setTransform]);
 
   const onConnectStart = useCallback((e: any, params: OnConnectStartParams) => setTryingToConnect(params), []);
-  const onConnectStop = useCallback(() => setTryingToConnect(null), []);
+  const onConnectEnd = useCallback(() => setTryingToConnect(null), []);
   const onConnect = useCallback(
     (params: Edge | Connection) => {
       setEdges(edges => addEdge(getEdgeWithColor(params), edges));
@@ -234,18 +234,20 @@ function Flow() {
     [addNode, contextMenu]
   );
 
+  const defaultViewport: Viewport = { x: transform.x, y: transform.y, zoom: transform.zoom };
+
+
   return (
     <>
       <ReactFlow
         data-connecting-handletype={tryingToConnect ? tryingToConnect.handleType : undefined}
-        defaultPosition={[transform.x, transform.y]}
-        defaultZoom={transform.zoom}
+        defaultViewport={defaultViewport}
         edges={edges}
         nodes={nodes}
         nodeTypes={nodeTypes}
         onConnect={onConnect}
         onConnectStart={onConnectStart}
-        onConnectStop={onConnectStop}
+        onConnectEnd={onConnectEnd}
         onEdgeUpdate={onEdgeUpdate}
         onEdgesChange={onEdgesChange}
         onEdgesDelete={onEdgesDelete}

@@ -31,11 +31,8 @@ function Audio({ children }: Props) {
 
   const [ready, setReady] = useState(false);
 
-  const context = useMemo(() => {
-    try {
-      return new AudioContext();
-    } catch { }
-  }, []);
+  const context = useMemo(() => new AudioContext(), []);
+
 
   useEffect(() => {
     const awaitAudioWorkletProcessors = async (context: AudioContext) => {
